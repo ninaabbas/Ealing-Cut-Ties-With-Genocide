@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EALING CUT TIES WITH GENOCIDE</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: "Arial", sans-serif;
+        }
+
+        /* --------- HEADER / NAVIGATION --------- */
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(8px);
+            background: rgba(0,0,0,0.7);
+        }
+
+        /* Container for left side: logo + nav */
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* Logo styling */
+        .logo {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        /* Navigation links */
+        nav.nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav.nav-links a {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+
+        nav.nav-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Sign petition button */
+        .petition-btn {
+            padding: 10px 22px;
+            background: #d40000;
+            border: 2px solid #d40000;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .petition-btn:hover {
+            background: #a30000;
+            border-color: #a30000;
+        }
+
+        /* --------- HERO --------- */
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background: url("https://via.placeholder.com/2000x1200?text=Background+Image")
+                center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            margin-top: 90px; /* compensate for fixed header */
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        .hero-title {
+            position: relative;
+            z-index: 2;
+            font-size: 4.5rem;
+            font-weight: 900;
+            letter-spacing: 4px;
+            line-height: 1.1;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-out;
+            max-width: 90%;
+        }
+
+        /* --------- CONTENT SECTIONS --------- */
+        .section {
+            padding: 120px 40px;
+            max-width: 1100px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            max-width: 900px;
+        }
+
+        .img-block {
+            margin-top: 40px;
+            height: 400px;
+            background: url("https://via.placeholder.com/1400x800?text=Section+Image")
+                center/cover no-repeat;
+        }
+
+        /* --------- FOOTER --------- */
+        footer {
+            padding: 40px;
+            text-align: center;
+            background: #111;
+            color: #777;
+        }
+
+        /* --------- ANIMATIONS --------- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(1.05);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* --------- RESPONSIVE --------- */
+        @media (max-width: 900px) {
+            header {
+                flex-wrap: wrap;
+                padding: 15px 20px;
+            }
+
+            .nav-left {
+                gap: 15px;
+                width: 100%;
+                justify-content: center;
+                order: 2;
+                margin-top: 10px;
+            }
+
+            .petition-btn {
+                order: 1;
+                margin-left: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            nav.nav-links {
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER with LOGO and NAV -->
+    <header>
+        <div class="nav-left">
+            <a href="#">
+                <img src="ealing logo.jpg" alt="Ealing Cut Ties with Genocide Logo" class="logo" />
+            </a>
+            <nav class="nav-links">
+                <a href="#take-action">Take Action</a>
+                <a href="#reports">Reports</a>
+                <a href="#get-involved">Get Involved</a>
+                <a href="#toolkits">Toolkits</a>
+            </nav>
+        </div>
+
+        <a href="#petition" class="petition-btn">Sign the Petition</a>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1 class="hero-title">EALING CUT TIES WITH GENOCIDE</h1>
+    </div>
+
+    <!-- SECTIONS -->
+    <section id="take-action" class="section">
+        <h2>Take Action</h2>
+        <p>
+            Add direct actions, steps, or important calls to action here. This section
+            invites visitors to participate and support your cause.
+        </p>
+        <div class="img-block"></div>
+    </section>
+
+    <section id="reports" class="section">
+        <h2>Reports</h2>
+        <p>
+            Provide in-depth research, documents, visuals, or key findings that help your audience understand the issue.
+        </p>
+        <div class="img-block"></div>
+    </section>
+
+    <section id="get-involved" class="section">
+        <h2>Get Involved</h2>
+        <p>
+            Showcase ways people can join your movement: volunteering, sharing materials, hosting events, and more.
+        </p>
+        <div class="img-block"></div>
+    </section>
+
+    <section id="toolkits" class="section">
+        <h2>Toolkits</h2>
+        <p>
+            Include downloadable resources, guides, action kits, and documents for supporters to use.
+        </p>
+        <div class="img-block"></div>
+    </section>
+
+    <section id="petition" class="section">
+        <h2>Sign the Petition</h2>
+        <p>
+            You can embed a real petition link, form, or iframe right here. This is where visitors can officially take action.
+        </p>
+        <div class="img-block"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Your Website – All Rights Reserved
+    </footer>
+
+    <script>
+        // Scroll reveal for sections
+        const sections = document.querySelectorAll(".section");
+
+        function revealOnScroll() {
+            const trigger = window.innerHeight * 0.85;
+
+            sections.forEach((sec) => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top < trigger) sec.classList.add("visible");
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    </script>
+</body>
+</html>
+
